@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# MobX로 간단한 TodoList App 개발
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TypeScript 템플릿을 사용하여 간단한 TodoList 개발연습
 
-## Available Scripts
+### 📌 개발 언어
 
-In the project directory, you can run:
+> <img src="https://img.shields.io/badge/react-61DAFB?style=flat&logo=react&logoColor=black"> 
+> <img src="https://img.shields.io/badge/typescript-3178C6?style=flat&logo=typescript&logoColor=black"/>
+> <img src="https://img.shields.io/badge/mobx-FF9955?style=flat&logo=mobx&logoColor=white"/>
 
-### `npm start`
+### MobX 사용순서 및 내용 정리
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. class문법으로 TodoStore생성
+   ![TodoStore](TodoStore.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+2. 최상위 컴포넌트에 Import 및 하위 컴포넌트 Props 전달
+   ![AppComponent](AppComponent.png)
 
-### `npm test`
+3. Props 전달받은 값 확인 시 Store에 정의되어있는 객체, 함수 등 확인하고 사용할 수 있다.  
+   ![PropsConsole](PropsConsole.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. 전달받은 Store를 활용한 실제 간단한 UI 구성
+   ![UI](UI.png)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. 동작  
+   ![Live](Live.gif)
